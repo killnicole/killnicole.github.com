@@ -1,0 +1,4 @@
+node_modules/
+
+.dropbox
+.DS_Store
