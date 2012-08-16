@@ -33,36 +33,7 @@ $(document).ready(function() {
 
 });
 
-var current = "all";
-
-function showWeb() {
-    if(current != "web") {
-      current = "web";
-      $('.dft').fadeOut();
-      $('.web').fadeIn();
-    }
-}
-
-function showIcons() {
-    if(current != "ico") {
-      current = "ico";
-      $('.dft').fadeOut();
-      $('.ico').fadeIn();
-    }
-}
-
-function showPaintings() {
-    if(current != "jpg") {
-      current = "jpg";
-      $('.dft').fadeOut();
-      $('.jpg').fadeIn();
-    }
-}
-
-function showAll() {
-    if(current != "all") {
-      current = "all";
-      $('.dft').fadeOut();
-      $('.dft').fadeIn();
-    }
+function show(what) {
+  $('.dft').fadeOut();
+  $(what).fadeIn();
 }
