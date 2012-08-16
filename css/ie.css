@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+* input{
+	border: 1px solid #d0d3d9;
+	color: #666;
+	font-size: 16px;
+	padding: 5px 9px;
+	//width: 250px;
+}
+* p.country input, .countries-popup .center input{
+	border: none;
+	width: auto;
+}
+.i-want dt, .i-want dd, .questionary-content ul li, .nav a{
+	//display: inline;
+	//zoom: 1;
+}
+.i-want a{
+	_background-color: #fff;
+	position: relative;
+}
+.authorization-btn, .authorization-btn:hover{
+	_background-color: #85d015;
+}
+.tested-traffic img{
+	//float: left;
+}
+.support .form-block input {
+    _width: 504px;
+}
+.social{
+	//margin-bottom: 20px;
+}
+form select.select{
+	_z-index: 1;
+}
+.questionary-top, .questionary-bottom{
+	_background: none;
+}
+.login-page, .register-page{
+	_margin-top: 100px;
+}
+.top-gradient, .i-want ul, .support .form-block textarea, .i-want a, .i-want li.visitors a, .i-want li.monetizes a, .i-want a:active, .faq, .authorization-btn, .authorization-btn:hover, .authorization-btn:active, .next-payment-counter .digit, .selected-question, .form-block, input[type="text"], input[type="password"], .questionary, .questionary-content ul li, .questionary1 .questionary-content ul li:hover, .countries-popup, .testimonials {
+	behavior: url(js/PIE.php);
+}
+.i-want ul, .support .form-block textarea, .i-want a, .i-want li.visitors a, .i-want li.monetizes a, .i-want a:active, .faq, .authorization-btn, .next-payment-counter .digit, .selected-question, .form-block, input[type="text"], input[type="password"], .questionary, .questionary-content ul li, .questionary1 .questionary-content ul li:hover, .countries-popup, .testimonials{
+	position: relative;
+	z-index: 0;
+}
+.ask-question, .fade, .autorization-block{
+//position: absolute;
+top: expression(
+	document.getElementsByTagName( 'body' )[0].scrollTop + "px"
+);
+}
