@@ -34,6 +34,6 @@ $(document).ready(function() {
 });
 
 function show(what) {
-  $('.dft').fadeOut();
+  $('.dft, .dft-smaller').fadeOut();
   $(what).fadeIn();
 }
