@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 /* basic styles */
@@ -10,7 +10,7 @@ html, body {
 	position: relative;
 }
 body.presentation{
-	background: url(../images/presentation-bg.jpg) repeat center 0;
+	background: #4b6b8a repeat center 0;
 	height: auto;
 	}
 body,td,th,input,select,textarea{
@@ -451,4 +451,28 @@ h4{
 .presentation-wrapper{
 	padding: 70px 0;
 	text-align: center;
+	}
+	
+/* cv page */
+
+body.cv{
+	background: url(../images/cv_pattern.jpg) repeat;
+	height: auto;
+	}
+	
+.cv-wrapper{
+	padding: 60px 0;
+	text-align: center;
+	}
+	
+div.holder {
+	margin-top:20px;
+	}
+
+.cv-wrapper a img{
+	padding-right:5px;
+	}
+	
+.cv-wrapper a{
+	font-size:15px;
 	}
