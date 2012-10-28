@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+p {
+	margin: 0 0 18px
+}
+img {
+	border: none;
+}
+input {
+	vertical-align: middle;
+}
+#wrapper {
+	width: 100%;
+	min-width: 1120px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	height: 43px;
+	background: url(img/header.jpg) repeat-x 100%;
+}
+#logo	{
+	float:left;
+	font-size:18px;
+	color:white;
+	padding:10px 0 0 50px;
+}
+#user	{
+	float:right;
+	width:150px;
+	padding-right:50px;
+	font-size:13px;
+	color:white !important; 
+}
+#user .avatar, .name	{
+	float:left;
+}
+.avatar	{
+	padding:8px 10px 0 0;
+}
+.name	{
+	padding-top:11px;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#content {
+	padding: 20px 50px;
+}
+.myquestions	{
+	float:left; 
+	height:95px; 
+	width:100%; 
+	margin-bottom:20px;
+	border-bottom: 1px solid #EEE;
+}
+.block {
+	float:left;
+	width:700px;
+	padding: 10px;
+  	color: #ababab;
+  	font-size: 12px;
+  	text-decoration: none;
+  	-webkit-border-radius: 5px;
+  	-moz-border-radius: 5px;
+  	-webkit-box-shadow: 0px 3px 3px #f3f3f3;
+  	-moz-box-shadow: 0px 3px 3px #f3f3f3;
+  	border: solid #e2e2e2 1px;
+  	background: #ffffff;
+}
+.button_style {
+	float:left; 
+	padding: 3px 15px;
+	text-align:center;
+  	font-size: 12px;
+	color: #4c85db;
+	outline: none;
+  	text-decoration: none;
+  	-webkit-border-radius: 5px;
+  	-moz-border-radius: 5px;
+  	-webkit-box-shadow: 0px 3px 3px #f3f3f3;
+  	-moz-box-shadow: 0px 3px 3px #f3f3f3;
+  	border: solid #e2e2e2 1px;
+  	background: #ffffff;
+}
+
+#biorhythms	{
+	float:right;
+	background:url(img/biorhythms.jpg) no-repeat;
+	width:153px;
+	height:58px;
+}
+.calendar {
+	padding-top:20px;
+}
+.timeline_list1 {
+	float:left;
+}
+.timeline_list1 li {
+	padding-bottom:31px;
+	color:#ababab;
+}
+.timeline_list2 li {
+	padding-bottom:30px;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	font-size:12px;
+	margin: -54px auto 0;
+	min-width: 1000px;
+	height: 54px;
+	position: relative;
+	border-top: 1px solid #eaeaea;
+}
+
+#footer_links {
+	padding-top:20px;
+}
+#footer_links a {
+	margin:10px;
+}
