@@ -31,6 +31,13 @@
           $("#load-history").replaceWith(clone);
         });
         $('.my-datepicker').datepicker();
+        var delayCalled = null;
+        $('.delay').click(function() {
+          delayCalled = $(this);
+        });
+        $('#save-delay').click(function() {
+          delayCalled.text("Delayed till " + $('.my-datepicker').val());
+        });
       });
       function agreeOrDisagree(agree) {
         var msg = ""
@@ -66,12 +73,12 @@
       </div>
       <div class="modal-body">
         <div style="float:left; position:relative; padding-left:24px" data-date="01/29/1987" data-date-format="dd-mm-yyyy">
-	  <input class="my-datepicker" size="16" type="text" value="01/29/1987" />
+	  <input class="my-datepicker" size="16" type="text" value="01/29/2013" />
 	</div>
       </div>
       <div class="modal-footer">
         <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-        <button class="btn btn-primary">Save changes</button>
+        <button class="btn btn-primary" data-dismiss="modal" id="save-delay">Save changes</button>
       </div>
     </div>
 
