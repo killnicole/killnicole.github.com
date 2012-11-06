@@ -131,3 +131,7 @@ input {
 #footer_links a {
 	margin:10px;
 }
+
+.dropdown-menu {
+    z-index: 2000;
+}

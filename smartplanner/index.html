@@ -6,6 +6,7 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="datepicker/css/datepicker.css" type="text/css" media="screen, projection" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css' />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -30,13 +31,13 @@
           var clone = $(".sunday-feb-13").clone();
           $("#load-history").replaceWith(clone);
         });
-        $('.my-datepicker').datepicker();
+        $('#my-datepicker').datepicker();
         var delayCalled = null;
         $('.delay').click(function() {
           delayCalled = $(this);
         });
         $('#save-delay').click(function() {
-          delayCalled.text("Delayed till " + $('.my-datepicker').val());
+          delayCalled.text("Delayed till " + $('#my-datepicker').val());
         });
       });
       function agreeOrDisagree(agree) {
@@ -82,7 +83,7 @@
 		<div style="clear:both; padding-top:10px;">
 			<div style="float:left; color:#ababab;">Choose day</div>
 			<div style="float:left; position:relative; padding-left:44px" data-date="01/29/1987" data-date-format="dd-mm-yyyy">
-			  <input class="my-datepicker" size="16" type="text" value="11/08/2012">
+			  <input id="my-datepicker" size="16" type="text" value="11/08/2012">
 			</div>
 		</div>
 		
@@ -136,8 +137,6 @@
         <button class="btn btn-primary" data-dismiss="modal" id="save-delay">Save changes</button>
       </div>
     </div>
-
-    <!--<span id="delay-dialog" data-date="01/29/1987" data-date-format="dd-mm-yyyy"><input class="my-datepicker" size="16" type="text" value="01/29/2013"><button id="save-delay" class="btn btn-primary" type="button">Ok</button></span>-->
 
     <div id="wrapper">
       <div id="header">
