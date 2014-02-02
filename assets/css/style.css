@@ -18,7 +18,7 @@ h1 {
     line-height: 1.3;
     font-weight: bold;
     font-style: italic;
-    padding: 200px 0 240px;
+    padding: 180px 0 140px;
     text-align: center;
     display: block;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .15), 0 0 40px rgba(24, 32, 33, .25);
@@ -43,16 +43,16 @@ h1:before, footer:before, section:after {
     width: 100%;
     clear: both;
 }
-header {
-    width: 100%;
-    min-height: 800px;
-    height: auto;
-    background: #2B2C2B url(../images/header-bg.jpg) center center no-repeat;
-    background-size: cover;
+header	{
+	background: #fff url(../images/header-bg.jpg) 50% 0 no-repeat fixed;
+	width: 100%;
+    min-height: 700px;
     color: #fff;
     margin-bottom: 100px;
     overflow: hidden;
 }
+
+
 nav {
     max-width: 800px;
     width: auto;
@@ -141,14 +141,14 @@ nav ul a:hover {
     text-shadow: none;
 }
 .mark-header {
-    width: 35px;
+    width: 22px;
     height: 23px;
     display: block;
-    margin: 115px auto 0;
+    margin: 100px auto 20px;
     background: transparent url(../images/mark-header.png) center center no-repeat;
 }
 .mark-footer {
-    width: 35px;
+    width: 22px;
     height: 23px;
     display: block;
     margin: 35px auto 25px;
@@ -240,7 +240,7 @@ footer a:hover	{
 @media only screen and (max-width : 840px) {
     h1 {
         font-size: 4em;
-        padding: 150px 0 170px;
+        padding: 120px 0 100px;
     }
     section figure {
         width: 100%;
@@ -258,6 +258,7 @@ footer a:hover	{
     header {
         margin-bottom: 20px;
         min-height: 630px;
+		box-size: auto;
     }
     section {
         margin: 0 auto 40px;
@@ -300,7 +301,8 @@ footer a:hover	{
     }
     header {
         margin-bottom: 20px;
-        min-height: 400px;
+        min-height: 500px;
+		box-size: auto;
     }
     .copyright span {
         display: block;
@@ -314,7 +316,7 @@ footer a:hover	{
     /* Retina CSS */
     .mark-header {
         background: transparent url(../images/mark-header@2x.png) center center no-repeat;
-        background-size: 35px 23px;
+        background-size: 22px 23px;
     }
     .browser {
         background: transparent url(../images/ill-browser@2x.png) right center no-repeat;
@@ -330,6 +332,6 @@ footer a:hover	{
     }
     .mark-footer {
         background: transparent url(../images/mark-footer@2x.png) center center no-repeat;
-        background-size: 35px 23px;
+        background-size: 22px 23px;
     }
 }
