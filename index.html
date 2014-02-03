@@ -30,15 +30,19 @@
 		<script type="text/javascript" src="assets/scripts/jquery.localscroll-1.2.7-min.js"></script>
 		<script type="text/javascript" src="assets/scripts/jquery.scrollTo-1.4.2-min.js"></script>
 		<script type="text/javascript">
-		$(document).ready(function() {
-			  $('#nav').localScroll(800);
+			$(document).ready(function() {
+				  $('#nav').localScroll(800);
 
-			  //.parallax(xPosition, speedFactor, outerHeight) options:
-			  //xPosition - Horizontal position of the element
-			  //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-			  //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-			  $('#intro').parallax("50%", 0.2);
-		})
+				  //.parallax(xPosition, speedFactor, outerHeight) options:
+				  //xPosition - Horizontal position of the element
+				  //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+				  //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+				  $('#intro').parallax("50%", 0.2);
+				  $(window).resize(function() {
+                     $('header').height($(window).width()*57 / 100 + 'px');
+                  });
+                  $(window).trigger('resize');
+			})
 		</script>
 		
 	</head>
@@ -56,9 +60,12 @@
 	</nav>
 
 	<h1>Designer gal.</h1>
-	<a href="mailto:killnicole@gmail.com" class="btn">Contact me</a>
 
-	<div class="mark-header"></div>
+	<div class="btn-wrap">
+		<a href="mailto:killnicole@gmail.com" class="btn">Contact me</a>
+	</div>
+
+	<div class="mark-header"><span></span></div>
 </header>
 
 <section>
