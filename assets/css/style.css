@@ -17,7 +17,7 @@ h1 {
     position: absolute;
     width: 100%;
     font-size: 4.3em;
-    line-height: 1.3;
+    line-height: 1.6;
     font-weight: bold;
     font-style: italic;
     text-align: center;
@@ -27,11 +27,12 @@ h1 {
 }
 h2 {
     font-size: .9em;
+    line-height: 1.6;
     text-transform: uppercase;
     color: #43454B;
-    line-height: 4;
     font-weight: bold;
     letter-spacing: 0.02em;
+    margin-bottom: 30px;
 }
 p	{
 	line-height:30px;
@@ -188,7 +189,7 @@ section figure {
     background: transparent url(../images/ill-moleskine.png) center center no-repeat;
 }
 .text {
-    max-width: 450px;
+    max-width: 60%;
     width: auto;
 }
 footer {
@@ -257,6 +258,10 @@ footer a:hover	{
     nav ul li{
         margin-right: 30px;
     }
+    .browser,
+    .moleskine {
+        width: 40%;
+    }
 }
 @media only screen and (max-width : 767px) {
     h1{
@@ -294,6 +299,11 @@ footer a:hover	{
     .text {
         float: none;
         margin: 0 auto;
+        max-width: 100%;
+    }
+    .browser,
+    .moleskine {
+        width: 100%;
     }
 }
 @media only screen and (max-width : 480px) {
@@ -301,7 +311,7 @@ footer a:hover	{
         background-image: url(../images/header-bg-mob.jpg);
         padding: 200px 0;
         background-size: auto;
-        background-position: center center !important;
+        background-position: center top !important;
     }
     #logo {
         float: none;
