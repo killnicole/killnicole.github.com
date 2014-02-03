@@ -48,7 +48,7 @@ h1:before, footer:before, section:after {
 }
 header	{
     position: relative;
-	background: #fff url(../images/header-bg1.jpg) center center no-repeat fixed;
+	background: #fff url(../images/header-bg.jpg) center center no-repeat fixed;
 	width: 100%;
     color: #fff;
     margin-bottom: 80px;
