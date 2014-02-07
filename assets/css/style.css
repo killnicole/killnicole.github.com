@@ -6,7 +6,7 @@
     height: 100%;
 }
 body {
-    font: 14px/1.6 normal "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font: 1em/1.6em normal"Source Sans Pro", Helvetica, Arial, sans-serif;
     color: #696B6F;
     background: #fff;
 }
@@ -48,7 +48,7 @@ h1:before, footer:before, section:after {
 }
 header	{
     position: relative;
-	background: #fff url(../images/header-bg.jpg) center center no-repeat fixed;
+	background: #2B2C2B url(../images/header-bg.jpg) center center no-repeat fixed;
 	width: 100%;
     color: #fff;
     margin-bottom: 80px;
