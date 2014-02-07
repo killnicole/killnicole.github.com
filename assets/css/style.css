@@ -48,12 +48,13 @@ h1:before, footer:before, section:after {
 }
 header	{
     position: relative;
-	background: #2B2C2B url(../images/header-bg.jpg) center center no-repeat fixed;
+	background: #1d2122 url(../images/header-bg1.jpg) center center no-repeat fixed;
 	width: 100%;
     color: #fff;
     margin-bottom: 80px;
     overflow: hidden;
     background-size: 100%;
+	min-height: 600px;
 }
 nav {
     position: relative;
@@ -92,6 +93,7 @@ nav ul a:hover {
 #logo {
     float: left;
     font-style: italic;
+	font-size: 1.1em;
 }
 .btn-wrap{
     position: absolute;
@@ -103,7 +105,7 @@ nav ul a:hover {
     font-weight: bold;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .15);
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin: 0 auto;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -111,7 +113,7 @@ nav ul a:hover {
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    padding: 15px 35px;
+    padding: 15px 30px;
     background-color: #425cc0;
     -moz-box-shadow: 0 2px 5px rgba(0, 17, 25, .25), inset 0 1px 0 rgba(255, 255, 255, .3);
     -webkit-box-shadow: 0 2px 5px rgba(0, 17, 25, .25), inset 0 1px 0 rgba(255, 255, 255, .3);
@@ -252,6 +254,18 @@ footer a:hover	{
     text-align: right;
 }
 @media screen and (max-width: 980px) {
+	header{
+        background-image: url(../images/header-bg-mob.jpg);
+        background-size: auto;
+        background-position: center top !important;
+    }
+    h1{
+        top: 30%;
+        font-size: 3.5em;
+    }
+	h2	{
+		font-size: 1em;
+	}
     nav{
         padding: 0 5%;
     }
@@ -264,13 +278,6 @@ footer a:hover	{
     }
 }
 @media only screen and (max-width : 767px) {
-    h1{
-        top: 30%;
-        font-size: 3em;
-    }
-	h2	{
-		font-size: 1em;
-	}
     section figure {
         width: 100%;
         margin: 40px auto;
@@ -309,7 +316,7 @@ footer a:hover	{
 @media only screen and (max-width : 480px) {
     #logo {
         float: none;
-        margin: 10px auto;
+        margin: 10px auto 25px;
         text-align: center;
     }
     nav {
@@ -317,6 +324,7 @@ footer a:hover	{
         width: 100%;
         padding: 0;
         top: 5%;
+		font-size: 1em;
     }
     nav ul {
         float: none;
@@ -325,11 +333,12 @@ footer a:hover	{
     }
     nav ul li {
         display: block;
-        margin: 10px 0;
+        margin: 20px 0;
     }
     h1{
-        top: 35%;
+        top: 40%;
     }
+
     .copyright span {
         display: block;
         margin: 0;
