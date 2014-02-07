@@ -307,12 +307,6 @@ footer a:hover	{
     }
 }
 @media only screen and (max-width : 480px) {
-    header{
-        background-image: url(../images/header-bg-mob.jpg);
-        padding: 200px 0;
-        background-size: auto;
-        background-position: center top !important;
-    }
     #logo {
         float: none;
         margin: 10px auto;
