@@ -6,7 +6,11 @@ html {
     height: 100%;
 }
 body {
-    font: 1em/1.6em normal"Source Sans Pro", Helvetica, Arial, sans-serif;
+    font: 1em/1.6em 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  	text-rendering: optimizelegibility;
     color: #696B6F;
     background: #fff;
 }
