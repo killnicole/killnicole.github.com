@@ -3,7 +3,7 @@
     var i = function () {
         var i = function () {
             t("#testimonials").slidesjs({
-                height: 300,
+                height: 400,
                 pagination: {
                     active: !1
                 },
@@ -34,6 +34,7 @@
 			var shadow = { x: 1, y: 1};
 
 			t(document).mousemove(function(event) {
+				t(".header__slogan-text").css("text-shadow", "none");
 			    currentMousePos.x = event.pageX;
 			    currentMousePos.y = event.pageY;
 			    currentWindowSize.w = window.innerWidth;
@@ -66,7 +67,10 @@
 			    });
 			});
         }, n = function () {
-            i(), a(), s()
+            i(), a()
+            if (!is_touch_device()) {
+            	s()
+            }
         };
         return {
             start: n
@@ -79,3 +83,8 @@
 Number.prototype.map = function ( in_min , in_max , out_min , out_max ) {
 	return ( this - in_min ) * ( out_max - out_min ) / ( in_max - in_min ) + out_min;
 }
+
+function is_touch_device() {
+  return 'ontouchstart' in window 
+      || 'onmsgesturechange' in window; 
+};

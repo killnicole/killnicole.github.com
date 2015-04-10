@@ -145,9 +145,9 @@ td, th {
     src:url("/fonts/belta-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/belta-bold-webfont.woff2") format("woff2"), url("/fonts/belta-bold-webfont.woff") format("woff"), url("/fonts/belta-bold-webfont.ttf") format("truetype"), url("/fonts/belta-bold-webfont.svg#font-name") format("svg")
 }
 @font-face {
-    font-family:"FFAD Matro";
-    src:url("/fonts/ffad_matro-webfont.eot");
-    src:url("/fonts/ffad_matro-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/ffad_matro-webfont.woff2") format("woff2"), url("/fonts/ffad_matro-webfont.woff") format("woff"), url("/fonts/ffad_matro-webfont.ttf") format("truetype"), url("/fonts/ffad_matro-webfont.svg#font-name") format("svg")
+    font-family:'Colors of Autumn';
+    src:url("/fonts/Colors-Of-Autumn-webfont.eot");
+    src:url("/fonts/Colors-Of-Autumn-webfont.eot?#iefix") format("embedded-opentype"),url("/fonts/Colors-Of-Autumn-webfont.woff2") format("woff2"),url("/fonts/Colors-Of-Autumn-webfont.woff") format("woff"),url("/fonts/Colors-Of-Autumn-webfont.ttf") format("truetype"),url("/fonts/Colors-Of-Autumn-webfont.svg#colors_of_autumnregular") format("svg")
 }
 .header__nav-items, .works__items, .contact__items {
     margin:0;
@@ -179,7 +179,7 @@ body {
     text-align:center
 }
 .header__container {
-    padding-top:20px
+    padding-top:50px
 }
 .header__logo, .header__nav-link {
     color:#fff;
@@ -191,10 +191,11 @@ body {
     font-weight:400
 }
 .header__nav {
-    margin-bottom:30px
+    margin:30px 0 50px;
 }
 .header__nav-item {
-    margin-top:20px
+    display: inline-block;
+    margin: 5px 20px;
 }
 .header__nav-link {
     display:inline-block;
@@ -207,7 +208,7 @@ body {
     border-bottom-color:rgba(255, 255, 255, .5)
 }
 .header__slogan {
-    font-family:'FFAD Matro', Belta, sans-serif;
+    font-family:'Colors of Autumn', Belta, sans-serif;
     text-transform:uppercase
 }
 .header__slogan-text {
@@ -215,6 +216,7 @@ body {
     display:inline-block;
     z-index:1;
     color: #fff;
+    text-shadow: -2px -2px 0 rgba(224,16,158,.4);
 }
 .header__slogan-text--dream {
     font-size:66px;
@@ -240,11 +242,13 @@ body {
     bottom: 0;
 }
 .header__slogan-text--shadow-green {
-    color:rgba(4, 175, 130, .4);
+    color:rgba(4,175,130,.4);
     z-index: -2;
+    left: -5px;
+    bottom: -5px;
 }
 .header__slogan-text--shadow-purple {
-    color: rgba(224, 16, 158, .4);
+    color: rgba(224,16,158,.4);
     z-index: -1;
 }
 @media only screen and (min-width:768px) {
@@ -260,29 +264,29 @@ body {
     }
     .header__nav {
         float:right;
-        margin-bottom:110px
+        margin: 0 0 110px;
     }
     .header__nav-item {
         display:inline-block;
         margin-top:0;
-        margin-left:50px
+        margin-left:30px
     }
     .header__slogan {
         clear:both
     }
     .header__slogan-text--dream {
-        font-size:130px;
+        font-size:100px;
         letter-spacing:6px;
-        line-height:131px
+        line-height:115px
     }
     .header__slogan-text--explore {
-        font-size:100px;
-        line-height:1
+        font-size:80px;
+        line-height:92px
     }
     .header__slogan-text--create {
-        font-size:110px;
+        font-size:90px;
         letter-spacing:6px;
-        line-height:111px
+        line-height:103px
     }
 }
 @media only screen and (min-width:1024px) {
@@ -295,19 +299,26 @@ body {
     .header__logo, .header__nav-link {
         font-size:24px
     }
+    .header__nav-item {
+        margin-left: 70px;
+    }
 }
 .section {
     margin-top:50px;
     margin-bottom:50px
 }
 .section__headline {
-    margin:0;
+    margin:0 0 20px;
     font-weight:400;
+    letter-spacing: 1px;
     text-transform:uppercase
 }
 .section__text {
     margin-top:10px;
     margin-bottom:30px
+}
+.section__text a {
+    color: inherit;
 }
 .section--about {
     margin-top:60px;
@@ -316,7 +327,7 @@ body {
 .section--about .section__headline {
     position:relative;
     display:inline-block;
-    font-family:'FFAD Matro', Belta, sans-serif;
+    font-family:'Colors of Autumn', Belta, sans-serif;
     font-size:30px
 }
 .section--about .section__icon {
@@ -345,7 +356,8 @@ body {
     overflow:hidden;
     padding-top:50px;
     padding-bottom:60px;
-    background:#25326C;
+    background:#25326C url("../images/bg-work.jpg");
+    background-size: cover;
     color:#fff
 }
 .section--works .section__headline {
@@ -371,14 +383,18 @@ body {
 }
 @media only screen and (min-width:768px) {
     .section {
-        margin-top:80px
+        margin-top:80px;
+        margin-bottom:80px;
     }
     .section__container {
         padding-left:50px;
         padding-right:50px
     }
+    .section__headline {
+        margin: 0;
+    }
     .section__text {
-        margin-top:30px
+        margin-top:23px
     }
     .section--about {
         font-size:18px
@@ -397,17 +413,18 @@ body {
         width:500px;
         margin-left:auto;
         margin-right:auto;
-        margin-bottom:60px
+        margin-bottom:60px;
+        opacity: .8;
     }
     .section--about .section__icon {
         height:110px
     }
     .section--about .section__headline {
-        font-size:60px
+        font-size:46px
     }
     .section--about .section__headline--designer .section__icon {
         top:-50px;
-        left:75px;
+        left:68px;
         width:110px
     }
     .section--about .section__headline--adventurer .section__icon {
@@ -417,7 +434,7 @@ body {
         height:160px
     }
     .section--about .section__headline--dreamer .section__icon {
-        top:-49px;
+        top:-58px;
         right:24px;
         width:120px;
         height:120px
@@ -487,9 +504,11 @@ body {
     -ms-transform:scaleX(-1);
     transform:scaleX(-1)
 }
+
 @media only screen and (min-width:768px) {
     .testimonials {
-        position:relative
+        position:relative;
+        margin-top: 40px;
     }
     .testimonials .slidesjs-navigation {
         position:absolute;
@@ -511,16 +530,24 @@ body {
 }
 .testimonial__photo {
     display:block;
-    width:80px;
-    height:80px;
+    width:100px;
+    height:100px;
     margin:20px auto;
     border-radius:50%
 }
 .testimonial__name {
     margin:0;
-    font-family:'Belta', sans-serif;
-    font-size:36px;
+    font-family:'Colors Of Autumn', sans-serif;
+    font-size:24px;
     font-weight:400
+}
+.testimonial__title {
+    opacity: 0.4;
+    font-size: 18px;
+    font-weight: normal;
+    color: #25326C;
+    line-height: 23px;
+    margin: 8px 0 15px;
 }
 .testimonial__content {
     margin:10px 0 0
@@ -532,9 +559,6 @@ body {
     content:'"'
 }
 @media only screen and (min-width:768px) {
-    .testimonial__photo {
-        margin-top:60px
-    }
     .testimonial__content {
         width:500px;
         margin-left:auto;
@@ -554,24 +578,25 @@ body {
     position:relative;
     display:inline-block;
     margin:0 0 30px;
-    font-family:'Belta', sans-serif;
-    font-size:45px;
+    font-family:'Colors Of Autumn', sans-serif;
+    font-size:36px;
+    text-transform: uppercase;
     font-weight:400
 }
 .contact__headline:after {
     position:absolute;
-    bottom:0;
-    left:25%;
+    left:35%;
     content:"";
-    width:50%;
+    width:30%;
     height:2px;
-    background:rgba(255, 255, 255, .4)
+    margin: 70px 0 0;
+    background:rgba(255, 255, 255, .3)
 }
 .contact__items {
     margin:0 0 30px
 }
 .contact__item {
-    margin:10px 0
+    margin:20px 0
 }
 .contact__link {
     color:#fff;
@@ -589,8 +614,8 @@ body {
 }
 @media only screen and (min-width:768px) {
     .contact {
-        padding-top:120px;
-        padding-bottom:120px;
+        padding-top:90px;
+        padding-bottom:80px;
         font-size:20px
     }
 }
