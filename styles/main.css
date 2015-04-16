@@ -173,7 +173,8 @@ body {
     -webkit-transition:height .2s ease-in-out;
     transition:height .2s ease-in-out;
     height:500px;
-    background:rgba(64, 66, 87, .2)url(../images/bg-header.jpg) 50% 100% no-repeat;
+    background:rgba(64, 66, 87, .2)url(../images/bg-header.jpg) no-repeat;
+    background-position: top center;
     background-size:cover;
     font-family:Belta, sans-serif;
     text-align:center
@@ -414,7 +415,7 @@ body {
         margin-left:auto;
         margin-right:auto;
         margin-bottom:60px;
-        opacity: .8;
+        color: #505B89;
     }
     .section--about .section__icon {
         height:110px
@@ -542,10 +543,9 @@ body {
     font-weight:400
 }
 .testimonial__title {
-    opacity: 0.4;
     font-size: 18px;
     font-weight: normal;
-    color: #25326C;
+    color: #A8ADC4;
     line-height: 23px;
     margin: 8px 0 15px;
 }
