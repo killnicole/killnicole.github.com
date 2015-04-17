@@ -4,7 +4,14 @@ html {
     -webkit-text-size-adjust:100%
 }
 body {
-    margin:0
+    margin:0;
+    -webkit-font-feature-settings:kern 1;
+    -moz-font-feature-settings:kern 1;
+    -o-font-feature-settings:kern 1;
+    text-rendering:geometricPrecision;
+    -webkit-font-smoothing:antialiased;
+    letter-spacing:.01rem;
+    -moz-osx-font-smoothing:grayscale
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
     display:block
@@ -169,6 +176,9 @@ body {
     font-size:16px;
     line-height:1.3
 }
+.header__logo, .header__nav-link, .header h1 {
+    letter-spacing: .68pt !important;
+}
 .header {
     -webkit-transition:height .2s ease-in-out;
     transition:height .2s ease-in-out;
@@ -177,10 +187,12 @@ body {
     background-position: top center;
     background-size:cover;
     font-family:Belta, sans-serif;
-    text-align:center
+    text-align:center;
 }
 .header__container {
-    padding-top:50px
+    padding-top:50px;
+      -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .header__logo, .header__nav-link {
     color:#fff;
@@ -196,7 +208,8 @@ body {
 }
 .header__nav-item {
     display: inline-block;
-    margin: 5px 20px;
+    margin-left: 20px;
+    line-height: 28px;
 }
 .header__nav-link {
     display:inline-block;
@@ -301,7 +314,7 @@ body {
         font-size:24px
     }
     .header__nav-item {
-        margin-left: 70px;
+        margin-left: 50px;
     }
 }
 .section {
