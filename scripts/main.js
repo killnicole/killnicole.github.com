@@ -88,3 +88,9 @@ function is_touch_device() {
   return 'ontouchstart' in window 
       || 'onmsgesturechange' in window; 
 };
+
+$(window).scroll(function(e){
+    var scrolled = $(window).scrollTop();
+    $('.header__slogan').css('transform', 'translate3d(0px, ' + (scrolled * 0.2) + 'px, 0px)');
+    $('.header__slogan').css('opacity', (1 - scrolled * 0.2 / 100));
+});
