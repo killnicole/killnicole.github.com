@@ -149,7 +149,7 @@ td, th {
 @font-face {
     font-family:"Belta";
     src:url("/fonts/belta-bold-webfont.eot");
-    src:url("/fonts/belta-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/belta-bold-webfont.woff2") format("woff2"), url("/fonts/belta-bold-webfont.woff") format("woff"), url("/fonts/belta-bold-webfont.ttf") format("truetype"), url("/fonts/belta-bold-webfont.svg#font-name") format("svg")
+    src:url("/fonts/belta-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/belta-bold-webfont.woff") format("woff"), url("/fonts/belta-bold-webfont.ttf") format("truetype"), url("/fonts/belta-bold-webfont.svg#font-name") format("svg")
 }
 @font-face {
     font-family:'Colors of Autumn';
