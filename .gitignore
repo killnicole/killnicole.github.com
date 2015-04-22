@@ -7,4 +7,5 @@ Icon
 .#*
 .ensime
 TAGS
-serve.py_site/
+serve.py
+_site/
