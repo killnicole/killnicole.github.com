@@ -1,0 +1,38 @@
+// --- navbar ------------------------------------------------------------------
+
+.navbar {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 16px;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__brand {
+    float: left;
+  }
+
+  &__nav {
+    float: right;
+  }
+
+  &__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__menu-item {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 60px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}

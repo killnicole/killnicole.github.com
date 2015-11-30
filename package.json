@@ -1,15 +1,20 @@
 {
+  "private": true,
   "name": "killnicole",
   "version": "1.0.0",
   "description": "My awesome website!",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "homepage": "https://github.com/killnicole/killnicole.github.com",
   "author": "",
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/killnicole/killnicole.github.com/issues"
   },
-  "homepage": "https://github.com/killnicole/killnicole.github.com"
+  "scripts": {
+    "css": "node-sass -r --output-style compressed --include-path scss src/scss/application.scss src/application.css",
+    "css:watch": "node-sass -w -r --output-style compressed --include-path scss src/scss/application.scss src/application.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "node-sass": "^3.4.2"
+  }
 }

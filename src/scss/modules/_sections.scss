@@ -1,0 +1,124 @@
+// --- sections ----------------------------------------------------------------
+
+.section {
+  padding: 60px 0;
+  min-height: 600px;
+  box-sizing: border-box;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 22px;
+  }
+
+  &__footer-link {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: $font-family-alternate;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background: $color-red;
+    }
+  }
+}
+
+// --- sections: intro ---------------------------------------------------------
+
+.section--intro {
+  padding-top: 160px;
+
+  .section__title {
+    max-width: 70%;
+    font-size: 80px;
+    font-family: $font-family-alternate;
+    letter-spacing: 2px;
+    line-height: 1.125;
+  }
+}
+
+// --- sections: project -------------------------------------------------------
+
+%section--base,
+.section--base {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .section__title,
+  .section__body {
+    margin-bottom: 30px;
+  }
+
+  .section__body {
+    max-width: 440px;
+    letter-spacing: .5px;
+    line-height: 1.25;
+  }
+}
+
+// --- sections: project-wimdu -------------------------------------------------
+
+.section--project-wimdu {
+  @extend %section--base;
+  background-image: url('images/project-wimdu.jpg');
+  background-color: #006cb7;
+}
+
+// --- sections: project-soundcloud --------------------------------------------
+
+.section--project-soundcloud {
+  @extend %section--base;
+  background-image: url('images/project-soundcloud.jpg');
+  background-color: $color-white;
+  color: $color-black;
+
+  .section__footer-link {
+    color: $color-black;
+  }
+}
+
+// --- sections: project-waymate -----------------------------------------------
+
+.section--project-waymate {
+  @extend %section--base;
+  background-image: url('images/project-waymate.jpg');
+  background-color: #b4c1d1;
+}
+
+// --- sections: contact -------------------------------------------------------
+
+.section--contact {
+  @extend %section--base;
+  background-color: $color-white;
+  color: $color-black;
+
+  .section__footer-link {
+    color: $color-black;
+  }
+}
+
+// --- sections: blog ----------------------------------------------------------
+
+.section--blog {
+  @extend %section--base;
+  background-image: url('images/blog.jpg');
+
+  .section__body {
+    max-width: 70%;
+    font: 80px $font-family-alternate;
+    letter-spacing: 2px;
+    line-height: 1.125;
+  }
+}
