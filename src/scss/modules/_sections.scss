@@ -1,12 +1,19 @@
 // --- sections ----------------------------------------------------------------
 
 .section {
-  padding: 60px 0;
-  min-height: 600px;
-  box-sizing: border-box;
-
   &__container {
     @extend %container;
+    box-sizing: border-box;
+    padding: 60px 0;
+    min-height: 600px;
+    position: relative;
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 70%;
   }
 
   &__title {
@@ -37,7 +44,9 @@
 // --- sections: intro ---------------------------------------------------------
 
 .section--intro {
-  padding-top: 160px;
+  .section__container {
+    padding-top: 160px;
+  }
 
   .section__title {
     max-width: 70%;
@@ -72,7 +81,7 @@
 
 .section--project-wimdu {
   @extend %section--base;
-  background-image: url('images/project-wimdu.jpg');
+  background-image: url('images/project-bg-wimdu.jpg');
   background-color: #006cb7;
 }
 
@@ -80,7 +89,6 @@
 
 .section--project-soundcloud {
   @extend %section--base;
-  background-image: url('images/project-soundcloud.jpg');
   background-color: $color-white;
   color: $color-black;
 
@@ -93,8 +101,12 @@
 
 .section--project-waymate {
   @extend %section--base;
-  background-image: url('images/project-waymate.jpg');
+  background-image: url('images/project-bg-waymate.jpg');
   background-color: #b4c1d1;
+
+  .section__image {
+    right: -100px;
+  }
 }
 
 // --- sections: contact -------------------------------------------------------
@@ -113,7 +125,7 @@
 
 .section--blog {
   @extend %section--base;
-  background-image: url('images/blog.jpg');
+  background-image: url('images/blog-bg.jpg');
 
   .section__body {
     max-width: 70%;

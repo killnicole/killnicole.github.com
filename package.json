@@ -9,12 +9,17 @@
   "bugs": {
     "url": "https://github.com/killnicole/killnicole.github.com/issues"
   },
+  "devDependencies": {
+    "http-server": "^0.8.5",
+    "node-sass": "^3.4.2",
+    "opener": "^1.4.1",
+    "parallelshell": "^2.0.0"
+  },
   "scripts": {
     "css": "node-sass -r --output-style compressed --include-path scss src/scss/application.scss src/application.css",
     "css:watch": "node-sass -w -r --output-style compressed --include-path scss src/scss/application.scss src/application.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "node-sass": "^3.4.2"
+    "open:dev": "opener http://localhost:8000",
+    "serve": "http-server -p 8000 src/",
+    "dev": "npm run open:dev -s && parallelshell \"npm run serve -s\" \"npm run css:watch -s\""
   }
 }
