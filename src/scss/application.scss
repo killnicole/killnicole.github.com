@@ -2,13 +2,19 @@
 
 @import 'base/variables';
 
+// --- base: pre ---------------------------------------------------------------
+
+@import 'base/mixins';
+@import 'base/placeholders';
+
 // --- base --------------------------------------------------------------------
 
-@import 'base/placeholders';
 @import 'base/normalize';
 @import 'base/core';
 
 // --- modules -----------------------------------------------------------------
 
 @import 'modules/navbar';
+@import 'modules/pagination';
 @import 'modules/sections';
+@import 'modules/testimonials';

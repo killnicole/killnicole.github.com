@@ -1,2 +1,15 @@
 // --- mixins ------------------------------------------------------------------
 
+@mixin translateY($value) {
+  -moz-transform: translateY($value);
+  -ms-transform: translateY($value);
+  -webkit-transform: translateY($value);
+  transform: translateY($value);
+}
+
+@mixin translateX($value) {
+  -moz-transform: translateX($value);
+  -ms-transform: translateX($value);
+  -webkit-transform: translateX($value);
+  transform: translateX($value);
+}

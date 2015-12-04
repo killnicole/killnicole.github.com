@@ -1,6 +1,7 @@
 // --- navbar ------------------------------------------------------------------
 
 .navbar {
+  z-index: 10;
   position: absolute;
   top: 50px;
   left: 0;
@@ -10,6 +11,7 @@
 
   &__container {
     @extend %container;
+    box-sizing: border-box;
   }
 
   &__brand {

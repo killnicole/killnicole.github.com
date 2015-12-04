@@ -1,17 +1,21 @@
 // --- sections ----------------------------------------------------------------
 
 .section {
+  overflow: hidden;
+
   &__container {
     @extend %container;
     box-sizing: border-box;
-    padding: 60px 0;
-    min-height: 600px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: 700px;
+    min-height: 80vh;
     position: relative;
   }
 
   &__image {
     position: absolute;
-    right: 0;
+    right: -100px;
     bottom: 0;
     max-width: 70%;
   }
@@ -32,11 +36,18 @@
     &:after {
       content: '';
       position: absolute;
-      bottom: -6px;
+      bottom: -8px;
       left: 0;
       width: 40px;
       height: 2px;
       background: $color-red;
+      transition: width .3s;
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
+      }
     }
   }
 }
@@ -44,6 +55,11 @@
 // --- sections: intro ---------------------------------------------------------
 
 .section--intro {
+  background-image: url('images/intro-bg.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   .section__container {
     padding-top: 160px;
   }
@@ -55,9 +71,21 @@
     letter-spacing: 2px;
     line-height: 1.125;
   }
+
+  .section__footer-link {
+    @include translateX(-50%);
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+
+    &:after {
+      @include translateX(-50%);
+      left: 50%;
+    }
+  }
 }
 
-// --- sections: project -------------------------------------------------------
+// --- sections: base ----------------------------------------------------------
 
 %section--base,
 .section--base {
@@ -77,6 +105,19 @@
   }
 }
 
+// --- sections: base light ----------------------------------------------------
+
+%section--light,
+.section--light {
+  background-color: $color-white;
+  color: $color-black;
+  text-shadow: none;
+
+  .section__footer-link {
+    color: $color-black;
+  }
+}
+
 // --- sections: project-wimdu -------------------------------------------------
 
 .section--project-wimdu {
@@ -89,12 +130,7 @@
 
 .section--project-soundcloud {
   @extend %section--base;
-  background-color: $color-white;
-  color: $color-black;
-
-  .section__footer-link {
-    color: $color-black;
-  }
+  @extend %section--light;
 }
 
 // --- sections: project-waymate -----------------------------------------------
@@ -103,22 +139,13 @@
   @extend %section--base;
   background-image: url('images/project-bg-waymate.jpg');
   background-color: #b4c1d1;
-
-  .section__image {
-    right: -100px;
-  }
 }
 
 // --- sections: contact -------------------------------------------------------
 
 .section--contact {
   @extend %section--base;
-  background-color: $color-white;
-  color: $color-black;
-
-  .section__footer-link {
-    color: $color-black;
-  }
+  @extend %section--light;
 }
 
 // --- sections: blog ----------------------------------------------------------
