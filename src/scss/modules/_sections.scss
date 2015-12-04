@@ -9,15 +9,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
     min-height: 700px;
-    min-height: 80vh;
+    min-height: 75vh;
     position: relative;
-  }
-
-  &__image {
-    position: absolute;
-    right: -100px;
-    bottom: 0;
-    max-width: 70%;
   }
 
   &__title {
@@ -59,6 +52,7 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  color: $color-white;
 
   .section__container {
     padding-top: 160px;
@@ -83,9 +77,18 @@
       left: 50%;
     }
   }
+
+  @include tablet {
+    .section__title {
+      max-width: none;
+      font-size: 60px;
+    }
+  }
 }
 
 // --- sections: base ----------------------------------------------------------
+
+$section--content-width: 440px;
 
 %section--base,
 .section--base {
@@ -93,15 +96,48 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  .section__column-left {
+    width: $section--content-width;
+    float: left;
+  }
+
+  .section__column-right {
+    float: right;
+  }
+
   .section__title,
   .section__body {
     margin-bottom: 30px;
   }
 
   .section__body {
-    max-width: 440px;
     letter-spacing: .5px;
     line-height: 1.25;
+  }
+
+  .section__image {
+    display: block;
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+    width: calc(100% - #{$section--content-width});
+  }
+
+  @include tablet {
+    .section__column-left,
+    .section__column-right {
+      width: 100%;
+      float: none;
+    }
+
+    .section__column-left {
+      margin-bottom: 40px;
+    }
+
+    .section__image {
+      width: 100%;
+      position: static;
+    }
   }
 }
 
@@ -109,8 +145,6 @@
 
 %section--light,
 .section--light {
-  background-color: $color-white;
-  color: $color-black;
   text-shadow: none;
 
   .section__footer-link {
@@ -124,6 +158,7 @@
   @extend %section--base;
   background-image: url('images/project-bg-wimdu.jpg');
   background-color: #006cb7;
+  color: $color-white;
 }
 
 // --- sections: project-soundcloud --------------------------------------------
@@ -131,6 +166,12 @@
 .section--project-soundcloud {
   @extend %section--base;
   @extend %section--light;
+
+  @include tablet {
+    .section__container {
+      padding-bottom: 0;
+    }
+  }
 }
 
 // --- sections: project-waymate -----------------------------------------------
@@ -139,6 +180,7 @@
   @extend %section--base;
   background-image: url('images/project-bg-waymate.jpg');
   background-color: #b4c1d1;
+  color: $color-white;
 }
 
 // --- sections: contact -------------------------------------------------------
@@ -153,11 +195,11 @@
 .section--blog {
   @extend %section--base;
   background-image: url('images/blog-bg.jpg');
+  color: $color-white;
 
   .section__body {
-    max-width: 70%;
-    font: 80px $font-family-alternate;
-    letter-spacing: 2px;
-    line-height: 1.125;
+    font-size: 36px;
+    letter-spacing: 1px;
+    line-height: 1.25;
   }
 }
