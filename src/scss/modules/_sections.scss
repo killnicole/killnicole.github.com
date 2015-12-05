@@ -83,6 +83,12 @@
       font-size: 60px;
     }
   }
+
+  @include mobile {
+    .section__title {
+      font-size: 50px;
+    }
+  }
 }
 
 // --- sections: base ----------------------------------------------------------
@@ -128,6 +134,10 @@ $section--content-width: 440px;
   }
 
   @include tablet {
+    .section__container {
+      min-height: auto;
+    }
+
     .section__column-left,
     .section__column-right {
       width: 100%;
@@ -193,13 +203,20 @@ $section--content-width: 440px;
   @extend %section--base;
   @extend %section--light;
 
+  .section__column-left {
+    width: 40%;
+  }
+
   .section__column-right {
     max-width: 600px;
+    width: 55%;
   }
 
   @include tablet {
+    .section__column-left,
     .section__column-right {
       max-width: none;
+      width: 100%;
     }
   }
 }
@@ -215,5 +232,14 @@ $section--content-width: 440px;
     font-size: 36px;
     letter-spacing: 1px;
     line-height: 1.25;
+  }
+
+  .section__post-link {
+    border-bottom: 2px solid rgba($color-red, 0);
+    transition: border .2s ease-in-out;
+
+    &:hover {
+      border-bottom-color: $color-red;
+    }
   }
 }

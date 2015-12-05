@@ -3,7 +3,7 @@
 .testimonials {
   position: relative;
   box-sizing: border-box;
-  padding: 50px 100px 0;
+  padding: 50px 15% 0;
   height: 400px;
   text-align: center;
   border: 1px solid rgba($color-black, .1);
@@ -43,5 +43,10 @@
     left: 0;
     width: 100%;
     text-align: center;
+  }
+
+  @include tablet {
+    height: auto;
+    padding-bottom: 90px;
   }
 }

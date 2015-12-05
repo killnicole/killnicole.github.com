@@ -1,11 +1,5 @@
-var $ = require('jquery');
+var Testimonials = require('./testimonials/testimonials');
+var ScrollDown = require('./scroll-down/scroll-down');
 
-$('.js-scroll-along').on('click', function(e) {
-  e.preventDefault();
-
-  var target = $(this).attr('href');
-
-  $('html, body').animate({
-    scrollTop: $(target).offset().top
-  }, 500);
-})
+Testimonials().init()
+ScrollDown().init()

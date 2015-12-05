@@ -9211,16 +9211,82 @@ return jQuery;
 }));
 
 },{}],2:[function(require,module,exports){
+var Testimonials = require('./testimonials/testimonials');
+var ScrollDown = require('./scroll-down/scroll-down');
+
+Testimonials().init()
+ScrollDown().init()
+
+},{"./scroll-down/scroll-down":3,"./testimonials/testimonials":4}],3:[function(require,module,exports){
 var $ = require('jquery');
 
-$('.js-scroll-along').on('click', function(e) {
-  e.preventDefault();
+var ScrollDown = function() {
+  function init() {
+    bindEvents();
+  }
 
-  var target = $(this).attr('href');
+  function bindEvents() {
+    $('.js-scroll-along').on('click', function(e) {
+      var target = $(this).attr('href');
 
-  $('html, body').animate({
-    scrollTop: $(target).offset().top
-  }, 500);
-})
+      e.preventDefault();
+      scrollTo(target);
+    })
+  }
+
+  function scrollTo(target) {
+    $('html, body').animate({
+      scrollTop: $(target).offset().top
+    }, 500);
+  }
+
+  return Object.freeze({
+    init: init
+  })
+};
+
+module.exports = ScrollDown;
+
+},{"jquery":1}],4:[function(require,module,exports){
+var $ = require('jquery');
+
+var Testimonials = function() {
+  var DURATION = 400;
+  var $items = $('.js-testimonial');
+  var $links = $('.js-change-testimonial');
+
+  function init() {
+    bindEvents();
+  }
+
+  function bindEvents() {
+    $('.js-change-testimonial').on('click', function(e) {
+      var index = $(this).parent().index();
+
+      e.preventDefault();
+      updatePagination(index);
+      updateSlides(index);
+    })
+  }
+
+  function updatePagination(index) {
+    $links
+      .removeClass('is-active')
+      .eq(index)
+      .addClass('is-active');
+  }
+
+  function updateSlides(index) {
+    $items.filter(':visible').fadeOut(DURATION, function() {
+      $items.eq(index).fadeIn(DURATION);
+    })
+  }
+
+  return Object.freeze({
+    init: init
+  })
+};
+
+module.exports = Testimonials;
 
 },{"jquery":1}]},{},[2]);

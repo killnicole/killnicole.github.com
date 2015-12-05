@@ -39,9 +39,36 @@
     }
   }
 
+  &__brand,
+  &__menu-link {
+    border-bottom: 2px solid rgba($color-red, 0);
+    transition: border .2s ease-in-out;
+
+    &:hover {
+      border-bottom-color: $color-red;
+    }
+  }
+
   @include tablet {
     &__menu-item {
       padding-left: 30px;
+    }
+  }
+
+  @include mobile {
+    text-align: center;
+
+    &__brand,
+    &__nav {
+      float: none;
+    }
+
+    &__brand {
+      margin-bottom: 20px;
+    }
+
+    &__nav {
+      padding-top: 20px;
     }
   }
 }
