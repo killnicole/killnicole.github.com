@@ -5,6 +5,7 @@
 
   &__container {
     @extend %container;
+    @extend %clearfix;
     box-sizing: border-box;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -54,16 +55,14 @@
   background-size: cover;
   color: $color-white;
 
-  .section__container {
-    padding-top: 160px;
-  }
-
   .section__title {
+    @extend %vertical-alignment;
     max-width: 70%;
     font-size: 80px;
     font-family: $font-family-alternate;
     letter-spacing: 2px;
     line-height: 1.125;
+    transition: all .4s;
   }
 
   .section__footer-link {
@@ -95,6 +94,11 @@ $section--content-width: 440px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+
+  .section__column-left,
+  .section__column-right {
+    transition: all .4s;
+  }
 
   .section__column-left {
     width: $section--content-width;
@@ -188,6 +192,16 @@ $section--content-width: 440px;
 .section--contact {
   @extend %section--base;
   @extend %section--light;
+
+  .section__column-right {
+    max-width: 600px;
+  }
+
+  @include tablet {
+    .section__column-right {
+      max-width: none;
+    }
+  }
 }
 
 // --- sections: blog ----------------------------------------------------------

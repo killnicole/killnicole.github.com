@@ -32,9 +32,16 @@
     display: inline-block;
     vertical-align: top;
     padding-left: 60px;
+    transition: all .4s;
 
     &:first-child {
       padding-left: 0;
+    }
+  }
+
+  @include tablet {
+    &__menu-item {
+      padding-left: 30px;
     }
   }
 }

@@ -16,6 +16,6 @@
 
 %vertical-alignment {
   @include translateY(-50%);
-  position: relative;
+  position: absolute;
   top: 50%;
 }
