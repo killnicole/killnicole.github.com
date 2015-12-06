@@ -22,7 +22,7 @@
     "build:styles": "node-sass -w -r --output-style compressed --include-path scss src/scss/application.scss public/application.css",
     "build:js": "browserify src/js/application.js -o public/application.js",
     "open:dev": "opener http://localhost:8000",
-    "serve": "http-server -p 8000 public/",
+    "serve": "http-server -p 8000 .",
     "dev": "npm run open:dev -s && parallelshell \"npm run serve -s\" \"npm run build -s\""
   }
 }
