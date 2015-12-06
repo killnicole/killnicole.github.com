@@ -1,11 +1,4 @@
-.dropbox
-Icon
+node_modules/
 
-# Emacs
-*~
-*#
-.#*
-.ensime
-TAGS
-serve.py
-_site/
+.dropbox
+.DS_Store

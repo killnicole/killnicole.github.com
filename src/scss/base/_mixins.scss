@@ -1,0 +1,55 @@
+// --- mixins ------------------------------------------------------------------
+
+@mixin translateY($value) {
+  -moz-transform: translateY($value);
+  -ms-transform: translateY($value);
+  -webkit-transform: translateY($value);
+  transform: translateY($value);
+}
+
+@mixin translateX($value) {
+  -moz-transform: translateX($value);
+  -ms-transform: translateX($value);
+  -webkit-transform: translateX($value);
+  transform: translateX($value);
+}
+
+@mixin reset-vertical-alignment {
+  position: static;
+  -moz-transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none;
+}
+
+// --- mixins: media queries --------------------------------------------------
+
+@mixin screen($res-min, $res-max) {
+  @media screen and ( min-width: $res-min ) and ( max-width: $res-max ) {
+    @content;
+  }
+}
+
+@mixin max-screen($res) {
+  @media screen and ( max-width: $res ) {
+    @content;
+  }
+}
+
+@mixin min-screen($res) {
+  @media screen and ( min-width: $res ) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @include max-screen($breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @include max-screen($breakpoint-mobile) {
+    @content;
+  }
+}

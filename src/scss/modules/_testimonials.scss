@@ -1,0 +1,54 @@
+// --- testimonials ------------------------------------------------------------
+
+.testimonials {
+  position: relative;
+  box-sizing: border-box;
+  padding: 50px 15% 0;
+  height: 400px;
+  text-align: center;
+  border: 1px solid rgba($color-black, .1);
+
+  &__image {
+    display: block;
+    margin: 0 auto 25px;
+    width: 100px;
+    height: 100px;
+  }
+
+  &__title,
+  &__subtitle {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+  }
+
+  &__title {
+    font-family: $font-family-alternate;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    font-size: 14px;
+    font-family: $font-family-alternate;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  &__pagination {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  @include tablet {
+    height: auto;
+    padding-bottom: 90px;
+  }
+}

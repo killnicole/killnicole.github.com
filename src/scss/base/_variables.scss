@@ -1,0 +1,20 @@
+// --- colors ------------------------------------------------------------------
+
+$color-black:             #373f52 !default;
+$color-white:             #fff !default;
+$color-red:               #ee3769 !default;
+$color-primary:           #b7cad3 !default;
+
+// --- font --------------------------------------------------------------------
+
+$font-family:            'Abel', sans-serif !default;
+$font-family-alternate:  'Merriweather', serif !default;
+
+// --- page --------------------------------------------------------------------
+
+$page-width:              1240px !default;
+
+// --- breakpoints -------------------------------------------------------------
+
+$breakpoint-tablet:       1024px !default;
+$breakpoint-mobile:       768px !default;
