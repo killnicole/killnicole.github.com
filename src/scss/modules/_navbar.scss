@@ -57,6 +57,12 @@
 
   @include mobile {
     text-align: center;
+    position: static;
+    background: $color-primary;
+
+    &__container {
+      padding: 20px 0;
+    }
 
     &__brand,
     &__nav {
@@ -69,6 +75,10 @@
 
     &__nav {
       padding-top: 20px;
+    }
+
+    &__menu-item {
+      padding-left: 10px;
     }
   }
 }

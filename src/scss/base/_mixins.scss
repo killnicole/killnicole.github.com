@@ -14,6 +14,14 @@
   transform: translateX($value);
 }
 
+@mixin reset-vertical-alignment {
+  position: static;
+  -moz-transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none;
+}
+
 // --- mixins: media queries --------------------------------------------------
 
 @mixin screen($res-min, $res-max) {

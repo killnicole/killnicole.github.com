@@ -25,6 +25,7 @@
     font-size: 14px;
     font-weight: 300;
     font-family: $font-family-alternate;
+    font-style: italic;
     position: relative;
 
     &:after {
@@ -53,6 +54,7 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: $color-primary;
   color: $color-white;
 
   .section__title {
@@ -60,6 +62,7 @@
     max-width: 70%;
     font-size: 80px;
     font-family: $font-family-alternate;
+    font-style: italic;
     letter-spacing: 2px;
     line-height: 1.125;
     transition: all .4s;
@@ -85,8 +88,17 @@
   }
 
   @include mobile {
+    background-image: none;
+
+    .section__container {
+      min-height: 0;
+      padding-top: 30px;
+      padding-bottom: 100px;
+    }
+
     .section__title {
-      font-size: 50px;
+      @include reset-vertical-alignment;
+      font-size: 40px;
     }
   }
 }
@@ -151,6 +163,13 @@ $section--content-width: 440px;
     .section__image {
       width: 100%;
       position: static;
+    }
+  }
+
+  @include mobile {
+    .section__container {
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
   }
 }

@@ -24,6 +24,7 @@
 
   &__title {
     font-family: $font-family-alternate;
+    font-style: italic;
     margin-bottom: 10px;
   }
 
@@ -32,8 +33,9 @@
   }
 
   &__content {
-    font-family: $font-family-alternate;
     font-size: 14px;
+    font-family: $font-family-alternate;
+    font-style: italic;
     line-height: 1.5;
   }
 
