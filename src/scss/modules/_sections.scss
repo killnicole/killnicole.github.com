@@ -214,6 +214,11 @@ $section--content-width: 440px;
   background-image: url('images/project-bg-waymate.jpg');
   background-color: #b4c1d1;
   color: $color-white;
+
+  .section__image {
+    box-shadow: 0px 10px 40px 0px rgba(#000, .1);
+    border-radius: 5px;
+  }
 }
 
 // --- sections: contact -------------------------------------------------------
