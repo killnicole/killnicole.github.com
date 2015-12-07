@@ -141,7 +141,7 @@ $section--content-width: 440px;
     display: block;
     position: absolute;
     right: -100px;
-    bottom: 0;
+    top: 110px;
     width: calc(100% - #{$section--content-width});
   }
 
@@ -205,12 +205,6 @@ $section--content-width: 440px;
 .section--project-soundcloud {
   @extend %section--base;
   @extend %section--light;
-
-  @include tablet {
-    .section__container {
-      padding-bottom: 0;
-    }
-  }
 }
 
 // --- sections: project-waymate -----------------------------------------------
