@@ -9,8 +9,8 @@
     box-sizing: border-box;
     padding-top: 60px;
     padding-bottom: 60px;
-    min-height: 700px;
-    min-height: 75vh;
+    min-height: 800px;
+    min-height: 100vh;
     position: relative;
   }
 
@@ -192,6 +192,12 @@ $section--content-width: 440px;
   background-image: url('images/project-bg-wimdu.jpg');
   background-color: #006cb7;
   color: $color-white;
+
+  @include mobile {
+    .section__container {
+      min-height: 80vh;
+    }
+  }
 }
 
 // --- sections: project-soundcloud --------------------------------------------
@@ -251,14 +257,5 @@ $section--content-width: 440px;
     font-size: 36px;
     letter-spacing: 1px;
     line-height: 1.25;
-  }
-
-  .section__post-link {
-    border-bottom: 2px solid rgba($color-red, 0);
-    transition: border .2s ease-in-out;
-
-    &:hover {
-      border-bottom-color: $color-red;
-    }
   }
 }
