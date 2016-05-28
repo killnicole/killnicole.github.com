@@ -23,9 +23,6 @@
 
   &__footer-link {
     font-size: 14px;
-    font-weight: 300;
-    font-family: $font-family-alternate;
-    font-style: italic;
     position: relative;
 
     &:after {
@@ -50,22 +47,19 @@
 // --- sections: intro ---------------------------------------------------------
 
 .section--intro {
-  background-image: url('images/intro-bg.jpg');
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $color-primary;
-  color: $color-white;
+  background-color: $color-white;
+  color: $color-black;
 
   .section__title {
     @extend %vertical-alignment;
     max-width: 70%;
-    font-size: 80px;
+    font-size: 76px;
     font-family: $font-family-alternate;
-    font-style: italic;
+    font-weight: bold;
     letter-spacing: 2px;
-    line-height: 1.125;
+    line-height: 1.2;
     transition: all .4s;
+	text-transform: uppercase;
   }
 
   .section__footer-link {
@@ -73,6 +67,7 @@
     position: absolute;
     bottom: 30px;
     left: 50%;
+	color: $color-black;
 
     &:after {
       @include translateX(-50%);
@@ -105,7 +100,7 @@
 
 // --- sections: base ----------------------------------------------------------
 
-$section--content-width: 440px;
+$section--content-width: 540px;
 
 %section--base,
 .section--base {
@@ -126,6 +121,10 @@ $section--content-width: 440px;
   .section__column-right {
     float: right;
   }
+  
+  .section__title {
+	  font-family: $font-family-alternate;
+  }
 
   .section__title,
   .section__body {
@@ -140,8 +139,8 @@ $section--content-width: 440px;
   .section__image {
     display: block;
     position: absolute;
-    right: -100px;
-    top: 110px;
+    right: -50px;
+    top: 80px;
     width: calc(100% - #{$section--content-width});
   }
 
@@ -256,5 +255,10 @@ $section--content-width: 440px;
     font-size: 36px;
     letter-spacing: 1px;
     line-height: 1.25;
+  }
+  
+  .section__post-link {
+	font-family: $font-family-alternate;
+	font-size: 46px;
   }
 }
