@@ -24,7 +24,7 @@
 
   &__menu {
     list-style: none;
-    padding: 0;
+    padding: 15px 0;
     margin: 0;
   }
 
@@ -39,7 +39,6 @@
     }
   }
 
-  &__brand,
   &__menu-link {
     border-bottom: 2px solid rgba($color-red, 0);
     transition: border .2s ease-in-out;
@@ -59,7 +58,6 @@
   @include mobile {
     text-align: center;
     position: static;
-    background: $color-primary;
 
     &__container {
       padding: 20px 0;

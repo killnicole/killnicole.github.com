@@ -250,6 +250,7 @@ $section--content-width: 540px;
   @extend %section--base;
   background-image: url('images/blog-bg.jpg');
   color: $color-white;
+  position: relative;
 
   .section__body {
     font-size: 36px;
@@ -261,4 +262,28 @@ $section--content-width: 540px;
 	font-family: $font-family-alternate;
 	font-size: 46px;
   }
+  
+  .section__copyright {
+	text-align: center;
+	padding: 20px 0;
+	font-size: 13px;
+	position: absolute;
+	bottom: 0;
+	width: 300px;
+	left: 50%;
+	margin-left: -150px;
+  }
+  
+  .section__copyright-text {
+	padding-top: 20px;
+  }
+  
+  @include tablet {
+	 .section__copyright {
+		 position: static;
+		 margin: 0 auto;
+	 }
+  }
 }
+
+
