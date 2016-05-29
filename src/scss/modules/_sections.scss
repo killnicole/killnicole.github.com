@@ -132,7 +132,6 @@ $section--content-width: 540px;
   }
 
   .section__body {
-    letter-spacing: .5px;
     line-height: 1.25;
   }
 
@@ -182,6 +181,12 @@ $section--content-width: 540px;
   .section__footer-link {
     color: $color-black;
   }
+}
+// --- sections: project-8fit -------------------------------------------------
+.section--project-8fit {
+  @extend %section--base;
+  @extend %section--light;
+  background-image: url('images/project-bg-8fit.jpg');  
 }
 
 // --- sections: project-wimdu -------------------------------------------------
@@ -254,7 +259,6 @@ $section--content-width: 540px;
 
   .section__body {
     font-size: 36px;
-    letter-spacing: 1px;
     line-height: 1.25;
   }
   
