@@ -6455,9 +6455,7 @@ button.close {
 
 .carousel-control {
   position: absolute;
-  top: 0;
   left: 0;
-  bottom: 0;
   width: 15%;
   opacity: .5;
   filter: alpha(opacity=50);
@@ -6465,7 +6463,7 @@ button.close {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-  background-color: transparent
+  background-color: transparent;
 }
 
 .carousel-control.left {
@@ -7053,7 +7051,7 @@ a:active, a:focus, a:hover, a:visited {
 
 @media (min-width:1024px) {
   .header {
-    background-position: 8px 160px;
+    background-position: 25% 160px;
     padding-top: 120px;
     padding-bottom: 315px
   }
@@ -7571,10 +7569,8 @@ a:active, a:focus, a:hover, a:visited {
   opacity: 1
 }
 
-@media (min-width:768px) {
-  .section-design .carousel-control {
-    display: block
-  }
+.section-design .carousel-control {
+  display: block
 }
 
 .section-design .left {
@@ -7599,7 +7595,6 @@ a:active, a:focus, a:hover, a:visited {
 
 .section-design .right {
   background-image: none;
-  top: 0;
   right: 0
 }
 
@@ -7653,7 +7648,7 @@ a:active, a:focus, a:hover, a:visited {
 .section-design__menu a {
   font-size: 24px;
   color: #021521;
-  position: relative
+  position: relative;
 }
 
 .section-design__menu a:hover {
@@ -7676,6 +7671,25 @@ a:active, a:focus, a:hover, a:visited {
   .section-design .section-app__link {
     margin: 21px 0 0
   }
+  .section-design .container {
+    position: relative
+  }
+}
+
+@media (min-width:1440px) {
+  .section-design {
+    background-position: calc(-248px + 50%) calc(30px + 50%)
+  }
+}
+
+@media (min-width:768px) {
+  .section-design .col-md-2 {
+    width: 50%
+  }
+  
+  .section-design .col-md-10 {
+    width: 50%
+  }
 }
 
 @media (min-width:1024px) {
@@ -7684,36 +7698,11 @@ a:active, a:focus, a:hover, a:visited {
     background-position: calc(-198px + 50%) calc(47px + 50%);
     padding-bottom: 0
   }
-}
-
-@media (min-width:1440px) {
-  .section-design {
-    background-position: calc(-248px + 50%) calc(30px + 50%)
-  }
-  .section-design .container {
-    position: relative
-  }
-}
-
-@media (min-width:768px) {
-  .section-design .col-md-2 {
-    width: 50%
-  }
-}
-
-@media (min-width:1024px) {
+  
   .section-design .col-md-2 {
     width: 12%
   }
-}
-
-@media (min-width:768px) {
-  .section-design .col-md-10 {
-    width: 50%
-  }
-}
-
-@media (min-width:1024px) {
+  
   .section-design .col-md-10 {
     width: 87%
   }
