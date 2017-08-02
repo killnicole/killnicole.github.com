@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch Beta 3.8 (29681) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs>
+        <circle id="path-1" cx="20" cy="20" r="20"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Portfolio-Copy" transform="translate(-700.000000, -4594.000000)">
+            <g id="Intro-+-Rectangle-55-+-Follow-me-on-Medium" transform="translate(0.000000, 3900.000000)">
+                <g id="Intro">
+                    <g id="Copyright" transform="translate(608.000000, 694.000000)">
+                        <g id="Group" transform="translate(92.000000, 0.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                            <path d="M10.0869565,12.0869565 L10.0869565,12.4521739 L12.2782609,12.4521739 L19.4782609,31.3652174 L20.2347826,31.3652174 L27.5913043,12.4521739 L29.8347826,12.4521739 L29.8347826,12.0869565 L24.8521739,12.0869565 L24.8521739,12.4521739 L27.2,12.4521739 L21.6956522,26.5913043 L16.2956522,12.4521739 L18.8,12.4521739 L18.8,12.0869565 L10.0869565,12.0869565 Z M12.6284965,12.4498132 L19.6564201,30.9483696 L20.0196164,30.9483696 L21.5182577,27.1394361 L15.9239131,12.4498132 L12.6284965,12.4498132 Z" id="V" stroke="#F95A66" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
