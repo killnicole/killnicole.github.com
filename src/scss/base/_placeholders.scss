@@ -1,0 +1,21 @@
+// --- placeholders ------------------------------------------------------------
+
+%container {
+  max-width: $page-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+%clearfix {
+  &:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+
+%vertical-alignment {
+  @include translateY(-50%);
+  position: absolute;
+  top: 50%;
+}
