@@ -6930,10 +6930,10 @@ a:active, a:focus, a:hover, a:visited {
 
 @media (min-width:1440px) {
   .container {
-    max-width: 1440px;
-    min-width: 1440px;
+    max-width: 1320px;
+    min-width: 1320px;
     padding-left: 120px;
-    padding-right: 120px
+    padding-right: 0px
   }
 }
 
