@@ -6930,10 +6930,10 @@ a:active, a:focus, a:hover, a:visited {
 
 @media (min-width:1440px) {
   .container {
-    max-width: 1320px;
-    min-width: 1320px;
+    max-width: 1440px;
+    min-width: 1440px;
     padding-left: 120px;
-    padding-right: 0px
+    padding-right: 120px
   }
 }
 
@@ -7565,7 +7565,8 @@ a:active, a:focus, a:hover, a:visited {
   width: 100px;
   height: 860px;
   background-color: hsla(0, 0%, 100%, .5);
-  opacity: 1
+  opacity: 1;
+  z-index: 2;
 }
 
 @media (max-width:768px) {
