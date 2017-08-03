@@ -7564,9 +7564,14 @@ a:active, a:focus, a:hover, a:visited {
   justify-content: center;
   width: 100px;
   height: 860px;
-  display: none;
   background-color: hsla(0, 0%, 100%, .5);
   opacity: 1
+}
+
+@media (max-width:768px) {
+  .section-design .carousel-control {
+    display: none !important;
+  }
 }
 
 .section-design .carousel-control {
