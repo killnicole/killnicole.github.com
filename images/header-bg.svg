@@ -3,12 +3,9 @@
     <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
     <title>Graphic</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <path d="M5,10 C7.7614,10 10,7.7614 10,5 C10,2.2386 7.7614,0 5,0 C2.2386,0 0,2.2386 0,5 C0,7.7614 2.2386,10 5,10 Z" id="path-1"></path>
-        <path d="M5,10 C7.7614,10 10,7.7614 10,5 C10,2.2386 7.7614,0 5,0 C2.2386,0 0,2.2386 0,5 C0,7.7614 2.2386,10 5,10 Z" id="path-3"></path>
-    </defs>
+    <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Homepage-Desktop-HD-Sliders-1-Copy" transform="translate(-181.000000, -160.000000)">
+        <g id="Homepage-Desktop-HD-Sliders-1" transform="translate(-181.000000, -160.000000)">
             <g id="Block-1">
                 <g id="BG">
                     <g id="Graphic" transform="translate(181.000000, 159.000000)">
@@ -63,20 +60,8 @@
                                 <path d="M215.758789,172.200195 C217.388523,172.200195 219.951904,173.303711 219.951904,173.303711 C219.951904,173.303711 222.236191,172.237697 224.14502,172.200195" id="Path-45" stroke="#007CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                 <path d="M153.101562,191.619141 C155.435547,207.521484 168.021484,221.359375 179.224609,223.753906" id="Path-48" stroke="#007CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                 <g id="Group-2" transform="translate(182.000000, 109.000000)">
-                                    <g id="Group-9" transform="translate(68.000000, 1.800003)">
-                                        <mask id="mask-2" fill="white">
-                                            <use xlink:href="#path-1"></use>
-                                        </mask>
-                                        <g id="Clip-8"></g>
-                                        <polygon id="Fill-7" fill="#007CFF" mask="url(#mask-2)" points="-5 15 15 15 15 -5 -5 -5"></polygon>
-                                    </g>
-                                    <g id="Group-12" transform="translate(8.000000, 0.800003)">
-                                        <mask id="mask-4" fill="white">
-                                            <use xlink:href="#path-3"></use>
-                                        </mask>
-                                        <g id="Clip-11"></g>
-                                        <polygon id="Fill-10" fill="#007CFF" mask="url(#mask-4)" points="-5 15 15 15 15 -5 -5 -5"></polygon>
-                                    </g>
+                                    <path d="M73,11.8000031 C75.7614,11.8000031 78,9.56140305 78,6.80000305 C78,4.03860305 75.7614,1.80000305 73,1.80000305 C70.2386,1.80000305 68,4.03860305 68,6.80000305 C68,9.56140305 70.2386,11.8000031 73,11.8000031 Z" id="Clip-8" fill="#007CFF"></path>
+                                    <path d="M13,10.8000031 C15.7614,10.8000031 18,8.56140305 18,5.80000305 C18,3.03860305 15.7614,0.800003052 13,0.800003052 C10.2386,0.800003052 8,3.03860305 8,5.80000305 C8,8.56140305 10.2386,10.8000031 13,10.8000031 Z" id="Clip-11" fill="#007CFF"></path>
                                     <path d="M60.1103516,6.00927734 C63.6630859,3.40625 68.6821383,2.16653242 73.831543,2.95507813 C78.9809477,3.74362383 82.5459,6.837919 82.5459,6.837919" id="Stroke-102" stroke="#007CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                     <path d="M0.110351562,5.00927734 C3.66308594,2.40625 8.68213828,1.16653242 13.831543,1.95507813 C18.9809477,2.74362383 22.5459,5.837919 22.5459,5.837919" id="Stroke-102" stroke="#007CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </g>
