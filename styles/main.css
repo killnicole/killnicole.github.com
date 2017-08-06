@@ -7542,10 +7542,11 @@ a:active, a:focus, a:hover, a:visited {
 
 .section-design .carousel-indicators li {
   background-color: grey;
-  width: 6px;
-  height: 6px;
-  margin: 0 5px;
-  border: 0
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  border: solid white 12px;
+  border-radius: 16px;
 }
 
 .section-design .carousel-indicators .active {
